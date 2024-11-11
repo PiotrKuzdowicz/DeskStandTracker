@@ -191,10 +191,12 @@ public class ClockWindow {
         WorkSessionController.getInstance().stopSession(workSessionThread);
         play.setEnabled(Boolean.TRUE);
         stop.setEnabled(Boolean.FALSE);
+        pause.setEnabled(Boolean.FALSE);
         changePosition.setEnabled(Boolean.FALSE);
         changePosition.repaint();
         play.repaint();
         stop.repaint();
+        pause.repaint();
     }
 
     private void playAction(ActionEvent event) {
